@@ -136,9 +136,9 @@ a {
     }
 
 .gradient-linear-reversed {
-    background: -moz-linear-gradient(top,rgba(245,248,249,0.85) 0%,rgba(245,248,249,0.12) 75%);
-    background: -webkit-linear-gradient(top,rgba(245,248,249,0.85) 0%,rgba(245,248,249,0.12) 75%);
-    background: linear-gradient(to bottom,rgba(245,248,249,0.85) 0%,rgba(245,248,249,0.12) 75%);
+    background: -moz-linear-gradient(top,rgba(245,248,249,0.85) 0%,rgba(245,248,249,0.0) 75%);
+    background: -webkit-linear-gradient(top,rgba(245,248,249,0.85) 0%,rgba(245,248,249,0.0) 75%);
+    background: linear-gradient(to bottom,rgba(245,248,249,0.85) 0%,rgba(245,248,249,0.0) 75%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f8f900',endColorstr='#f5f8f900',GradientType=0);
 }
 
@@ -147,14 +147,6 @@ ul {
     list-style-type: none;
     margin: 0 0 15px 0;
 }
-
-    ul.languages {
-        padding: 0;
-    }
-
-        ul.languages li {
-            width: 65px;
-        }
 
     ul li {
         padding: 0 20px 4px 0px;
@@ -170,17 +162,45 @@ li {
     vertical-align: top;
 }
 
+/*#region Footer*/
+
+ul.languages {
+    padding: 0;
+}
+
+    ul.languages li {
+        width: 65px;
+    }
+
+label.worked-with {
+    padding: 0px 15px 0px 15px;
+    margin-bottom: -5px;
+}
+
+ul.worked-with {
+    padding: 0;
+}
+
+    ul.worked-with li {
+        width: 165px;
+        height: 51px;
+        vertical-align: middle;
+        display: table-cell;
+        padding: 0px 15px 0px 15px;
+        -ms-opacity: 0.6;
+        opacity: 0.6;
+        -webkit-transition: opacity .2s;
+        -moz-transition: opacity .2s;
+        transition: opacity .2s;
+    }
+
+        ul.worked-with li:hover {
+            -ms-opacity: 1;
+            opacity: 1;
+        }
 
 .samsung-color {
     background-color: #1428a0;
-}
-
-.samsung-header-logo {
-    display: table-cell;
-    height: 50px;
-    vertical-align: middle;
-    width: 157px;
-    padding: 0px;
 }
 
 .samsung-bg-logo {
@@ -188,10 +208,44 @@ li {
     width: 151px;
     height: 22px;
     margin: 2px;
-    background: url(/images/samsung-logo-letter.png) no-repeat;
+    background: url(/images/samsung-logo-letter-light-gray.png) no-repeat;
     background-size: auto 22px;
-    background-position: center; 
+    background-position: center;
     line-height: 100px;
     overflow: hidden;
     color: transparent !important;
 }
+
+.fuero-bg-logo {
+    display: block;
+    width: 160px;
+    height: 49px;
+    margin: 2px;
+    margin-top: -4px;
+    background: url(/images/FueroGames-logo-light-gray.png) no-repeat;
+    background-size: auto 49px;
+    background-position: center;
+    line-height: 100px;
+    overflow: hidden;
+    color: transparent !important;
+}
+
+.seven-lvls-bg-logo {
+    display: block;
+    width: 152px;
+    height: 39px;
+    margin: 2px;
+    background: url(/images/7Levels-Logo-light-gray.png) no-repeat;
+    background-size: auto 39px;
+    background-position: center;
+    line-height: 100px;
+    overflow: hidden;
+    color: transparent !important;
+}
+
+.contact-footer {
+    font-size: 19px;
+    margin-left: 52px;
+}
+
+/*#endregion Footer*/
