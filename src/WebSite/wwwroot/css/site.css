@@ -162,6 +162,53 @@ li {
     vertical-align: top;
 }
 
+/*#region Header*/
+
+.bg-header1 {
+    background: url(/images/Background-Code-Gray.jpg) no-repeat;
+    background-position: top center;
+    overflow: hidden !important;
+    color: transparent !important;
+}
+
+.bg-header2 {
+    background: url(/images/Background-Code2-Gray.jpg) no-repeat;
+    background-position: top center;
+    overflow: hidden !important;
+    color: transparent !important;
+}
+
+.bg-header3 {
+    background: url(/images/Background-Code3.jpg) no-repeat;
+    background-position: center center;
+    overflow: hidden !important;
+    color: transparent !important;
+}
+
+.bg-header4 {
+    background: url(/images/Background-Code4-Gray.jpg) no-repeat;
+    background-position: bottom center;
+    overflow: hidden !important;
+    color: transparent !important;
+}
+
+img.bg-header1.img-responsive {
+    background-size: cover;
+}
+
+img.bg-header2.img-responsive {
+    background-size: cover;
+}
+
+img.bg-header3.img-responsive {
+    background-size: cover;
+}
+
+img.bg-header4.img-responsive {
+    background-size: cover;
+}
+/*#endregion Header*/
+
 /*#region Footer*/
 
 ul.languages {
