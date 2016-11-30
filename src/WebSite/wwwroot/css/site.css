@@ -256,7 +256,9 @@ ul.worked-with {
     height: 22px;
     margin: 2px;
     background: url(/images/samsung-logo-letter-light-gray.png) no-repeat;
+    -ms-background-size: auto 22px;
     background-size: auto 22px;
+    -ms-background-position: center;
     background-position: center;
     line-height: 100px;
     overflow: hidden;
@@ -270,7 +272,9 @@ ul.worked-with {
     margin: 2px;
     margin-top: -4px;
     background: url(/images/FueroGames-logo-light-gray.png) no-repeat;
+    -ms-background-size: auto 49px;
     background-size: auto 49px;
+    -ms-background-position: center;
     background-position: center;
     line-height: 100px;
     overflow: hidden;
@@ -283,7 +287,9 @@ ul.worked-with {
     height: 39px;
     margin: 2px;
     background: url(/images/7Levels-Logo-light-gray.png) no-repeat;
+    -ms-background-size: auto 39px;
     background-size: auto 39px;
+    -ms-background-position: center;
     background-position: center;
     line-height: 100px;
     overflow: hidden;
@@ -291,8 +297,16 @@ ul.worked-with {
 }
 
 .contact-footer {
-    font-size: 19px;
     margin-left: 52px;
+}
+
+.contact-footer-headline {
+    font-size: 19px;
+}
+
+div.contact-footer-label label {
+    font-size: 12px;
+    position: initial;
 }
 
 /*#endregion Footer*/
