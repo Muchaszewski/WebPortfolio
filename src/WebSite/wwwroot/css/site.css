@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: black;
+    background-color: white;
     position: relative;
 }
 
@@ -169,6 +169,7 @@ li {
     background-position: top center;
     overflow: hidden !important;
     color: transparent !important;
+    text-indent: -9999px;
 }
 
 .bg-header2 {
@@ -176,6 +177,7 @@ li {
     background-position: top center;
     overflow: hidden !important;
     color: transparent !important;
+    text-indent: -9999px;
 }
 
 .bg-header3 {
@@ -183,6 +185,7 @@ li {
     background-position: center center;
     overflow: hidden !important;
     color: transparent !important;
+    text-indent: -9999px;
 }
 
 .bg-header4 {
@@ -190,6 +193,7 @@ li {
     background-position: bottom center;
     overflow: hidden !important;
     color: transparent !important;
+    text-indent: -9999px;
 }
 
 img.bg-header1.img-responsive {

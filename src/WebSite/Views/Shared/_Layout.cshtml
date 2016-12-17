@@ -9,7 +9,6 @@
     <title>@ViewData["Title"] - Tomasz Juszczak</title>
 
     @{ Html.RenderPartial("../../RazorControllers/_Head.cshtml"); }
-    @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
 </head>
 <body ng-app data-spy="scroll" data-target=".navbar" data-offset="50">
     @RenderSection("navbarTop", false)

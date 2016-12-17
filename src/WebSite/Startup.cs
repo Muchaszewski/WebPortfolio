@@ -22,8 +22,7 @@ namespace WebSite
 
             if (env.IsDevelopment())
             {
-                // This will push telemetry data through Application Insights pipeline faster, allowing you to view results immediately.
-                builder.AddApplicationInsightsSettings(developerMode: true);
+
             }
             Configuration = builder.Build();
         }
@@ -34,8 +33,6 @@ namespace WebSite
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddApplicationInsightsTelemetry(Configuration);
-
             services.AddMvc();
         }
 
@@ -44,8 +41,6 @@ namespace WebSite
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
-            app.UseApplicationInsightsRequestTelemetry();
 
             if (env.IsDevelopment())
             {
@@ -56,8 +51,6 @@ namespace WebSite
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
-            app.UseApplicationInsightsExceptionTelemetry();
 
             app.UseStaticFiles();
 
